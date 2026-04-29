@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+}
+
+/* HEADER */
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    color: pink;
+}
+
+/* SERVICES */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.price-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.price-btn:hover {
+    background: hotpink;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+.whatsapp {
+    background: green;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}

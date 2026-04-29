@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOW HAIR STUDIO</title>
+    <link rel="stylesheet" href="hair.css">   
+     <meta name="Description" content="I am creating a hair and beauty website for my client, Glow Hair Studio. The website will showcase the various hair and beauty services offered by the studio, including braiding, wigs, wig installation, hair treatment, and makeup. The website will also include a gallery of images showcasing the studio's work, as well as contact information for booking appointments. The design will be modern and visually appealing, with a focus on highlighting the quality of the services provided by Glow Hair Studio.">
+    <meta name="author" content="Mbadiegwu Amrich">
+</head>
+<body>
+   <header>
+    <h1>Glow Hair Studio 💇🏽‍♀️</h1>
+    <p>Luxury Hair, Beauty & Makeup Services</p>
+</header>
+
+<!-- SERVICES -->
+<section class="container">
+
+    <!-- BRAIDING (FIXED IMAGE) -->
+       <div class="card">
+        <img src="images/hair2.jpg" alt="Braiding">
+        <h2>Braiding</h2>
+        <button class="price-btn" onclick="book('Braiding', 10000)">₦10,000 - Book Now</button>
+    </div>
+
+    <!-- WIGS -->
+      <div class="card">
+      <img src="images/hair11.jpg" alt="Wigs">
+        <h3>Wigs</h3>
+        <button class="price-btn" onclick="book('Wigs', 500000)"><a href="wigs.html">₦500,000+ - Book Now</a></button>
+    </div>
+
+    <!-- WIG INSTALLATION -->
+    <div class="card">
+      <img src="images/hair21.jpg" alt="Wig Installation">
+        <h3>Wig Installation</h3>
+        <button class="price-btn" onclick="book('Wig Installation', 15000)">₦15,000 - Book Now</button>
+    </div>
+
+    <!-- HAIR TREATMENT (FIXED IMAGE) -->
+    <div class="card">
+        <img src="images/hair3.jpg" alt="Hair Treatment">
+        <h3>Hair Treatment</h3>
+        <button class="price-btn" onclick="book('Hair Treatment', 12000)">₦12,000 - Book Now</button>
+    </div>
+
+    <!-- MAKEUP (ADDED PROPER IMAGE) -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1526045478516-99145907023c" alt="Makeup Service">
+        <h3>Makeup</h3>
+        <button class="price-btn" onclick="book('Makeup', 25000)">₦25,000 - Book Now</button>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<div class="contact">
+    <h2>Contact Us 📞</h2>
+    <p>Book your appointment instantly on WhatsApp</p>
+
+    <a class="whatsapp"
+       href="https://wa.me/2349043315770?text=Hello, I want to book a hair appointment"
+       target="_blank">
+       Book on WhatsApp
+    </a>
+</div>
+
+<script>
+function book(service, price) {
+    alert("You selected: " + service + " - ₦" + price);
+}
+</script>
+</body>
+</html>
